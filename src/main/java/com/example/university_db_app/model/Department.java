@@ -32,7 +32,7 @@ public class Department {
     private String name; 
   
     // ONE department has MANY lecturers. "mappedBy" = the foreign key lives in the lecturer 
-table. 
+
     @OneToMany(mappedBy = "department") 
     private List<Lecturer> lecturers = new ArrayList<>(); 
 }
